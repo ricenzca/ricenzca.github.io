@@ -1,0 +1,32 @@
+nav {
+	position: fixed !important;
+	width: 100vw;
+}
+
+a {
+	text-decoration: none !important;
+}
+
+main {
+	padding-top: 9vh;
+	margin-left: 10vw;
+	margin-right: 10vw;
+	border: 1px solid black;
+}
+
+#about-me {
+	height: 91vh;
+	border: 1px solid black;
+}
+
+
+#projects {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.project {
+	width: 35vw;
+	height: 45vh;
+}
