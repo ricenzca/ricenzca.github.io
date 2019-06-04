@@ -8,8 +8,9 @@
 	<title>Terence</title>
 
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700&display=swap" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
-	<script type="text/javascript" src="script.js"></script>
+	<!-- <script type="text/javascript" src="script.js"></script> -->
 </head>
 <body>
 	<nav class="navbar navbar-expand-md navbar-dark bg-dark">
@@ -22,62 +23,70 @@
 	  <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
 	    <ul class="navbar-nav ml-auto mr-5 mt-2 mt-lg-0">
 	      <li class="nav-item mr-3">
-	        <a class="nav-link" href="#about-me">About Me</a>
+	        <a class="nav-link hover-white" href="#about-me-cont">About Me</a>
 	      </li>
 	      <li class="nav-item dropdown mr-3">
-		      <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
+		      <a class="nav-link dropdown-toggle hover-white" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Projects</a>
 		      <div class="dropdown-menu">
-		        <a class="dropdown-item" href="#">Pinky & Brain</a>
+		      	<a class="dropdown-item" href="#projects-cont">View all</a>
+		      	<a class="dropdown-item" href="#">Choco-React</a>
+		      	<a class="dropdown-item" href="#">Instaclone</a>
 		        <a class="dropdown-item" href="#">Needs & Wants</a>
-		        <a class="dropdown-item" href="#">Instaclone</a>
-		        <a class="dropdown-item" href="#">Choco-React</a>
+		        <a class="dropdown-item" href="#">Pinky & Brain</a>
 		      </div>
 	    	</li>
-	      <li class="nav-item mr-3">
-	        <a class="nav-link" href="#">Contact</a>
-	      </li>
 	    </ul>
 	  </div>
 	</nav>
 
 	<main>
 
-	<div class="section" id="about-me">
-			<p>
-				An aspiring developer with background in Engineering and 4 years of experience in the pharmaceutical industry.
-			</p>
-			<p>
-				Always keen to learn and figure out how things work. Excited about developing applications with great user-experience and using technology to tackle real-world issues.
-			</p>
-			<a href="#">Link up</a>
+	<div class="section" id="about-me-cont">
+			<div id="about-me">
+				<p>
+					An aspiring developer with background in Engineering and 4 years of experience in the pharmaceutical industry.
+					<br/><br/>
+					Always keen to learn and figure out how things work. Excited about developing applications with great user-experience and using technology to tackle real-world issues.
+				</p>
+			</div>
+
+			<div id="contacts-cont">
+				<a href="https://github.com/ricenzca" target="_blank" alt="github link"><img class="icons" src="./img/github.svg" />Github</a>
+				<a href="https://www.linkedin.com/in/terence-siow" target="_blank" alt="linkedin link"><img class="icons" src="./img/linkedin.svg" />LinkedIn</a>
+				<a href="mailto:ricenzca@hotmail.com" target="_blank" alt="email link"><img class="icons" src="./img/msoutlook.svg" />Email</a>
+			</div>
 	</div>
 
-	<div class="section" id="projects">
-		<div class="project">
-
-			<span>Pinky & Brain</span>
-			<p>Have some fun and improve your typing speed with this "Pinky & the Brain"-themed typing game! Made interactive with Javascript and CSS animations.</p>
-
-		</div>
-
-		<div class="project">
-
-			<span>Needs & Wants</span>
-			<p>A fuss-free expense tracker with informative charts built with Express on Node.js, PostgreSQL and Chart.js.</p>
+	<div class="section" id="projects-cont">
+		<div class="project col-md-6">
+			<div class="gifs">
+			</div>
+			<p class="title">Pinky & Brain</p>
+			<p class="description">A "Pinky & the Brain"-themed typing game made interactive with Javascript and CSS animations.</p>
 
 		</div>
 
-		<div class="project">
-
-			<span>Instaclone</span>
-			<p>Follow your friends, 'Like' their posts and leave your comments! Instaclone is a clone of the popular Instagram app built with Ruby on Rails, Javascript and integrated with Cloudinary API.</p>
+		<div class="project col-md-6">
+			<div class="gifs">
+			</div>
+			<p class="title">Needs & Wants</p>
+			<p class="description">A fuss-free expense tracker with dynamic, informative charts built with Express on Node.js, PostgreSQL and Chart.js.</p>
 
 		</div>
 
-		<div class="project">
+		<div class="project col-md-6">
+			<div class="gifs">
+			</div>
+			<p class="title">Instaclone</p>
+			<p class="description">Instaclone is a clone of the popular Instagram app built with Ruby on Rails, Javascript and integrated with Cloudinary API.</p>
 
-			<span>Choco-React</span>
-			<p>Get some chocolates at your fingertips! Choco-React is a chocolate e-commerce website built with React.js, Ruby on Rails and integrated with Stripe payment API.</p>
+		</div>
+
+		<div class="project col-md-6">
+			<div class="gifs">
+			</div>
+			<p class="title">Choco-React</p>
+			<p class="description">Choco-React is a chocolate e-commerce website built with React.js, Ruby on Rails and integrated with Stripe payment API.</p>
 
 		</div>
 	</div>

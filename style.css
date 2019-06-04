@@ -1,32 +1,137 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+p {
+	margin-bottom: 0;
+}
+
 nav {
 	position: fixed !important;
 	width: 100vw;
+	z-index: 1;
 }
 
 a {
 	text-decoration: none !important;
+	font-weight: bold;
+	color: grey;
 }
 
-main {
-	padding-top: 9vh;
-	margin-left: 10vw;
-	margin-right: 10vw;
+a:hover {
+	font-weight: bold;
+}
+
+.hover-white:hover {
+	color: white !important;
+}
+
+.section {
+	display: flex;
 	border: 1px solid black;
+}
+
+#about-me-cont {
+	flex-direction: column;
+	padding: 20vh 0;
+	height: 100vh;
+	justify-content: space-around;
+	align-items: center;
+	background: url('./img/first-step.jpeg');
+	background-repeat: no-repeat;
+	background-size: cover;
 }
 
 #about-me {
-	height: 91vh;
+	margin: 0 15vw;
+	text-align: justify;
+	line-height: 2em;
+	font-size: 20px;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background-color: rgba(230,230,230,0.3);
+	padding: 1em 2em;
+	border-radius: 10px;
+}
+
+#contacts-cont {
+	display: flex;
+	justify-content: space-around;
+	width: 35vw;
+}
+
+#contacts-cont a {
+	color: black;
+	text-align: center;
+}
+
+#contacts-cont a:hover {
+	text-decoration: underline !important;
+}
+
+.icons {
+	width: 40px;
+	height: 40px;
+	margin: 5px;
+	border-radius: 5px;
+}
+
+#projects-cont {
+	flex-wrap: wrap;
+	justify-content: space-between;
+	padding: 8vh 2vw;
+	margin-left: 10vw;
+	margin-right: 10vw;
+}
+
+.project {
+	padding: 2%;
+	border: 1px solid black;
+}
+
+.title {
+	font-weight: bold;
+	font-size: 16px;
+	margin: 15px 0;
+}
+
+.description {
+	font-size: 16px;
+	text-align: justify;
+	margin: 15px 0;
+}
+
+.gifs {
+	width: 100%;
+	height: 300px;
 	border: 1px solid black;
 }
 
 
-#projects {
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-}
 
-.project {
-	width: 35vw;
-	height: 45vh;
+@media (max-width: 800px) {
+	#about-me-cont {
+		height: 80vh;
+	}
+
+	#about-me {
+		margin: 0 10vw;
+		line-height: 1.5em;
+		font-size: 16px;
+		padding: 1em;
+	}
+
+	#contacts-cont {
+		position: relative;
+		top: 5vh;
+		width: 90vw;
+	}
+
+	.icons {
+		width: 30px;
+		height: 30px;
+		margin: 5px;
+		border-radius: 5px;
+	}
 }
