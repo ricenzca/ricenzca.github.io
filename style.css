@@ -3,8 +3,13 @@
 	padding: 0;
 }
 
+main {
+	background-color: rgb(245, 245, 245);
+}
+
 p {
 	margin-bottom: 0;
+	color: darkslategrey;
 }
 
 nav {
@@ -17,6 +22,7 @@ a {
 	text-decoration: none !important;
 	font-weight: bold;
 	color: grey;
+	font-size: calc(.8vw + 1.2vh + .6vmin) !important;
 }
 
 a:hover {
@@ -29,7 +35,7 @@ a:hover {
 
 .section {
 	display: flex;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 }
 
 #about-me-cont {
@@ -47,8 +53,7 @@ a:hover {
 	margin: 0 15vw;
 	text-align: justify;
 	line-height: 2em;
-	font-size: 20px;
-	font-weight: bold;
+	font-size: calc(.5vw + 1.2vh + .6vmin);
 	font-family: 'Roboto', sans-serif;
 	background-color: rgba(230,230,230,0.3);
 	padding: 1em 2em;
@@ -58,11 +63,11 @@ a:hover {
 #contacts-cont {
 	display: flex;
 	justify-content: space-around;
-	width: 35vw;
+	width: calc(20vw + 20vh + 15vmin);
 }
 
 #contacts-cont a {
-	color: black;
+	color: darkslategrey;
 	text-align: center;
 }
 
@@ -71,8 +76,8 @@ a:hover {
 }
 
 .icons {
-	width: 40px;
-	height: 40px;
+	width: calc(1.5vw + 2.5vh + 1vmin);
+	height: calc(1.5vw + 2.5vh + 1vmin);
 	margin: 5px;
 	border-radius: 5px;
 }
@@ -81,33 +86,38 @@ a:hover {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	padding: 8vh 2vw;
-	margin-left: 10vw;
-	margin-right: 10vw;
+	margin-left: 5vw;
+	margin-right: 5vw;
+}
+
+.projects-sec-cont {
+	display: flex;
+	flex-wrap: wrap;
 }
 
 .project {
 	padding: 2%;
-	border: 1px solid black;
-}
-
-.title {
-	font-weight: bold;
-	font-size: 16px;
-	margin: 15px 0;
+	/*border: 1px solid black;*/
 }
 
 .description {
-	font-size: 16px;
+	font-size: calc(.5vw + 1.2vh + .6vmin);
 	text-align: justify;
 	margin: 15px 0;
 }
 
 .gifs {
 	width: 100%;
-	height: 300px;
+	height: auto;
 	border: 1px solid black;
+	margin-bottom: 15px;
+	background: url('./img/first-step.jpeg');
 }
 
+.carousel-item > img {
+	width: 100vw;
+	height: 100vh;
+}
 
 
 @media (max-width: 800px) {
@@ -118,20 +128,39 @@ a:hover {
 	#about-me {
 		margin: 0 10vw;
 		line-height: 1.5em;
-		font-size: 16px;
 		padding: 1em;
 	}
 
 	#contacts-cont {
 		position: relative;
 		top: 5vh;
-		width: 90vw;
 	}
 
-	.icons {
-		width: 30px;
-		height: 30px;
-		margin: 5px;
-		border-radius: 5px;
+	#contacts-cont a {
+		color: lightgoldenrodyellow;
+	}
+
+	.gifs {
+		width: 100%;
+		/*height: calc(10vw + 10vh + 5vmin);*/
+	}
+
+/*	.carousel-item > img {
+		width: 100vw;
+		height: auto;
+	}*/
+}
+
+@media (min-width: 800px) {
+	.title, .description {
+		position: relative;
+		top: 30%;
+	}
+}
+
+@media (max-width: 600px) {
+	.projects-sec-cont:nth-child(even) {
+		flex-direction: column-reverse;
+		background-color: red;
 	}
 }
