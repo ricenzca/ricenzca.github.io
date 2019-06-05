@@ -20,9 +20,8 @@ nav {
 
 a {
 	text-decoration: none !important;
-	font-weight: bold;
 	color: grey;
-	font-size: calc(.8vw + 1.2vh + .6vmin) !important;
+	font-size: calc(.5vw + 1.2vh + .6vmin) !important;
 }
 
 a:hover {
@@ -68,6 +67,7 @@ a:hover {
 
 #contacts-cont a {
 	color: darkslategrey;
+	font-weight: bold;
 	text-align: center;
 }
 
@@ -154,7 +154,7 @@ a:hover {
 @media (min-width: 800px) {
 	.title, .description {
 		position: relative;
-		top: 30%;
+		top: 3rem;
 	}
 }
 
