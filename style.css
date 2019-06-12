@@ -4,7 +4,7 @@
 }
 
 main {
-	background-color: rgb(245, 245, 245);
+	background-color: orange;
 }
 
 p {
@@ -102,6 +102,7 @@ a:hover {
 
 .title {
 	font-weight: bold;
+	color: black;
 }
 
 .description {
@@ -165,6 +166,10 @@ a:hover {
 @media (max-width: 600px) {
 	.projects-sec-cont:nth-child(even) {
 		flex-direction: column-reverse;
-		background-color: red;
+		/*background-color: red;*/
 	}
+}
+
+.collapse .dropdown-menu {
+	text-align: center;
 }
