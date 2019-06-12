@@ -163,7 +163,7 @@ a:hover {
 	}
 }
 
-@media (max-width: 600px) {
+@media (max-width: 768px) {
 	.projects-sec-cont:nth-child(even) {
 		flex-direction: column-reverse;
 		/*background-color: red;*/
