@@ -19,8 +19,8 @@ nav {
 }
 
 a {
+	color: black;
 	text-decoration: none !important;
-	color: grey;
 	font-size: calc(.5vw + 1.2vh + .6vmin) !important;
 }
 
@@ -54,7 +54,8 @@ a:hover {
 	line-height: 2em;
 	font-size: calc(.5vw + 1.2vh + .6vmin);
 	font-family: 'Roboto', sans-serif;
-	background-color: rgba(230,230,230,0.3);
+	font-weight: bold;
+	background-color: rgba(230, 230, 230, 0.5);
 	padding: 1em 2em;
 	border-radius: 10px;
 }
@@ -66,13 +67,14 @@ a:hover {
 }
 
 #contacts-cont a {
-	color: darkslategrey;
+	color: black;
 	font-weight: bold;
 	text-align: center;
 }
 
 #contacts-cont a:hover {
 	text-decoration: underline !important;
+	font-size: calc(.8vw + 1.2vh + .6vmin) !important;
 }
 
 .icons {
@@ -85,27 +87,32 @@ a:hover {
 #projects-cont {
 	flex-wrap: wrap;
 	justify-content: space-between;
-	padding: 8vh 2vw;
+	padding: 10vh 2vw;
 	margin-left: 5vw;
 	margin-right: 5vw;
 }
 
 .projects-header {
-	margin: 0 15vw;
-	text-align: justify;
-	line-height: 2em;
-	font-size: calc(.5vw + 1.2vh + .6vmin);
+	margin: 10vh auto auto;
+	padding: 4vh 0;
+	text-align: center;
+	font-size: calc(1.5vw + 1.2vh + 1vmin);
 	font-family: 'Roboto', sans-serif;
+	font-weight: bold;
+
+	p {
+		color: black;
+	}
 }
 
 .projects-sec-cont {
 	display: flex;
 	flex-wrap: wrap;
+	margin: 1em auto;
 }
 
 .project {
 	padding: 2%;
-	/*border: 1px solid black;*/
 }
 
 .title {
@@ -127,11 +134,20 @@ a:hover {
 	background: url('./img/first-step.jpeg');
 }
 
-.carousel-item > img {
+.carousel-item>img {
 	width: 100vw;
 	height: 100vh;
 }
 
+
+@media (min-width: 800px) {
+
+	.title,
+	.description {
+		position: relative;
+		top: 3em;
+	}
+}
 
 @media (max-width: 800px) {
 	#about-me-cont {
@@ -149,35 +165,23 @@ a:hover {
 		top: 5vh;
 	}
 
-	#contacts-cont a {
-		color: lightgoldenrodyellow;
+	#projects-cont {
+		padding: 4vh 2vw;
 	}
 
 	.gifs {
 		width: 100%;
-		/*height: calc(10vw + 10vh + 5vmin);*/
-	}
-
-/*	.carousel-item > img {
-		width: 100vw;
-		height: auto;
-	}*/
-}
-
-@media (min-width: 800px) {
-	.title, .description {
-		position: relative;
-		top: 3rem;
 	}
 }
 
 @media (max-width: 768px) {
+	.projects-header {
+		font-size: calc(1vw + 2.5vh + 1vmin);
+		margin-left: 0;
+		padding: 4vh 2vw;
+	}
+
 	.projects-sec-cont:nth-child(even) {
 		flex-direction: column-reverse;
-		/*background-color: red;*/
 	}
-}
-
-.collapse .dropdown-menu {
-	text-align: center;
 }
