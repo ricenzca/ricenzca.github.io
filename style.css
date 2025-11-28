@@ -90,6 +90,14 @@ a:hover {
 	margin-right: 5vw;
 }
 
+.projects-header {
+	margin: 0 15vw;
+	text-align: justify;
+	line-height: 2em;
+	font-size: calc(.5vw + 1.2vh + .6vmin);
+	font-family: 'Roboto', sans-serif;
+}
+
 .projects-sec-cont {
 	display: flex;
 	flex-wrap: wrap;
