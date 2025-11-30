@@ -105,10 +105,25 @@ a:hover {
 	}
 }
 
+.real-world-cont {
+	display: flex;
+	width: 100%;
+}
+
 .projects-sec-cont {
 	display: flex;
 	flex-wrap: wrap;
 	margin: 1em auto;
+}
+
+.project-images-cont {
+	height: 25vw;
+}
+
+.project-images {
+	height: 100%;
+	border: 1px solid black;
+	margin-bottom: 15px;
 }
 
 .project {
@@ -137,16 +152,6 @@ a:hover {
 .carousel-item>img {
 	width: 100vw;
 	height: 100vh;
-}
-
-
-@media (min-width: 800px) {
-
-	.title,
-	.description {
-		position: relative;
-		top: 3em;
-	}
 }
 
 @media (max-width: 800px) {
@@ -179,6 +184,14 @@ a:hover {
 		font-size: calc(1vw + 2.5vh + 1vmin);
 		margin-left: 0;
 		padding: 4vh 2vw;
+	}
+
+	.real-world-cont {
+		flex-direction: column;
+	}
+
+	.project-images-cont {
+		height: 45vw;
 	}
 
 	.projects-sec-cont:nth-child(even) {
